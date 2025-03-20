@@ -3,14 +3,14 @@ This repository summarizes the Python codes for EEG feature selection
 
 This work was supported in part by the ECE Dept. of UT Dallas under Pathways to Research Scholarship.
 
-**A two-step feature selection approach is presented to enhance EEG seizure detection, where:
+**A two-step feature selection approach is presented to enhance EEG seizure detection, where:**
 
-1. Step 1: Linear discriminant analysis (LDA) for channel ranking;
-2. Step 2: Feature subset selection using least absolute shrinkage and selection operation (LASSO);**
+**1. Step 1: Linear discriminant analysis (LDA) for channel ranking;**
+**2. Step 2: Feature subset selection using least absolute shrinkage and selection operation (LASSO).**
 
-**Any inquiry of clinical data and subjects' information is upon reasonable request, and shall refer to the corresponding PI of this research**:   
+**The selection procedure is recursively performed, validated on SVM to obtain the optimal results.**
 
-**Dr. Mehrdad Nourani, Professor, Dept. of ECE, UT Dallas, TX 75080, USA. Email: nourani@utdallas.edu.**
+We tested our works on [CHB-MIT Scalp EEG Database (version 1.0.0)](https://doi.org/10.13026/C2K01R), a well-known public EEG dataset for many seizure detection tasks. We achieved F-1 score of 88%, and we are continuing to improve!
 
 Three child branches are introduced as next. Details can be referred in each individual branch:
 1. [DTF Calculation](https://github.com/penggenchang/DTF-and-Seizure-Network/tree/DTF-Calculation): This branch implements the Python code for directed transfer function (DTF), a widely-applied directed connectivity metric in EEG data analysis.
